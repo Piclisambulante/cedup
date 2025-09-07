@@ -1,0 +1,10 @@
+Abra no IntelliJ o módulo Back-End/conta e rode:
+
+PowerShell:
+  .\mvnw.cmd clean install
+  .\mvnw.cmd spring-boot:run
+
+Testes:
+  POST http://localhost:8080/auth/register
+  POST http://localhost:8080/auth/login
+  GET  http://localhost:8080/auth/me   (Header: Authorization: Bearer <token>)
